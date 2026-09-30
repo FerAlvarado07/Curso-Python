@@ -1,0 +1,29 @@
+[project]
+name = "laboratorio-1"
+version = "0.1.0"
+description = "Laboratorio 1 (Poetry)"
+authors = [
+    {name = "FerAlvarado07",email = "fernando.alvarado@axity.com"}
+]
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "black (>=26.5.1,<27.0.0)",
+    "isort (>=9.0.1,<10.0.0)",
+    "ruff (>=0.16.9,<0.17.0)",
+    "pre-commit (>=4.6.2,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (>=26.5.1,<27.0.0)",
+    "isort (>=9.0.1,<10.0.0)",
+    "ruff (>=0.16.9,<0.17.0)",
+    "pre-commit (>=4.6.2,<5.0.0)",
+    "pytest (>=9.1.1,<10.0.0)"
+]
