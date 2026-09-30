@@ -1,0 +1,6 @@
+app:
+  name: Mi aplicación
+  debug: true
+database:
+  host: localhost
+  port: 5432
