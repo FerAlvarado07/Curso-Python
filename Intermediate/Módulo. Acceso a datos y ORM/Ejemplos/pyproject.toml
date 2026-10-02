@@ -1,0 +1,40 @@
+[project]
+name = "laboratorio-1"
+version = "0.1.0"
+description = "Laboratorio 1 (Poetry)"
+authors = [
+    {name = "FerAlvarado07",email = "fernando.alvarado@axity.com"}
+]
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "black (>=26.5.1,<27.0.0)",
+    "isort (>=9.0.1,<10.0.0)",
+    "ruff (>=0.16.9,<0.17.0)",
+    "pre-commit (>=4.6.2,<5.0.0)",
+    "attrs (>=26.1.0,<27.0.0)",
+    "pydantic (>=2.13.5,<3.0.0)",
+    "pyyaml (>=6.0.3,<7.0.0)",
+    "tzdata (>=2026.4,<2027.0)",
+    "requests (>=2.34.2,<3.0.0)",
+    "httpx[http2] (>=0.28.1,<0.29.0)",
+    "aiohttp (>=3.14.3,<4.0.0)",
+    "psycopg[binary] (>=3.3.6,<4.0.0)",
+    "pyodbc (>=5.3.0,<6.0.0)",
+    "alembic (>=1.20.0,<2.0.0)",
+    "motor (>=3.7.1,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (>=26.5.1,<27.0.0)",
+    "isort (>=9.0.1,<10.0.0)",
+    "ruff (>=0.16.9,<0.17.0)",
+    "pre-commit (>=4.6.2,<5.0.0)",
+    "pytest (>=9.1.1,<10.0.0)"
+]
