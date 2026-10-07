@@ -1,0 +1,21 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.10
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 26.1.0
+    hooks:
+      - id: black
+
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        entry: poetry -C "Intermediate/Módulo. Pruebas y TDD/Laboratorio_1" run python -m pytest
+        language: system
+        pass_filenames: false
+        always_run: true
